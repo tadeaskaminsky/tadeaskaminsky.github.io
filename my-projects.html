@@ -26,6 +26,21 @@
         .button:hover {
             background-color: darken(var(--primary), 10%);
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        /* th {
+            background-color: #f2f2f2;
+        } */
     </style>
 </head>
 <body>
@@ -40,6 +55,57 @@
     </ul>
 </nav>
 <main class="container">
+    <div style="text-align: center;" class="image-container">
+        <h2>My Projects</h2>
+        <p>Results of my work so far</p>
+        <img src="https://github.com/tady88/Page/raw/main/data_science_ai.png" alt="AI Data Science" style="width: 30%;" class="responsive">
+        <figcaption>This is created by AI, but I can create some plots</figcaption>
+    </div>
+    <p></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Date of Creation</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data Visualization - Earthquakes</td>
+                <td>Visual representation of earthquake data</td>
+                <td>6/2023</td>
+                <td><a href="/zemetrasenia.html" class="button">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Linear Programming - Predicting the survival of the Titanic passengers</td>
+                <td>Using linear programming to predict survival</td>
+                <td>12/2023</td>
+                <td><a href="/titanic.html" class="button">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Unconstrained Optimisation Methods - Barrier inner point method</td>
+                <td>Analysis of Barrier inner point method</td>
+                <td>5/2024</td>
+                <td><a href="/barrier_method.html" class="button">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Data Management - NHL (soon)</td>
+                <td>Managing NHL data</td>
+                <td>6/2024</td>
+                <td><a href="" class="button">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Geocaching - tsk88 (soon)</td>
+                <td>Analysis of my Geocaching data</td>
+                <td>late 2024</td>
+                <td><a href="" class="button">View Project</a></td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+<!-- <main class="container">
     <div style="text-align: center;" class="image-container">
         <h2>My Projects</h2>
         <p>Results of my work so far</p>
@@ -62,7 +128,7 @@
     <div style="text-align: center;">   
         <a href="" class="button">Geocaching - tsk88 (soon)</a>
     </div>
-</main>
+</main> -->
 <footer class="container" style="text-align: center;">
     <small>Tadeáš Kaminský &middot; 2024</small>
 </footer>
