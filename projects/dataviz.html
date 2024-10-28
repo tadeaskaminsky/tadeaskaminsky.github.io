@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="icon" type="image/png" href="/icon.png">
     <title>Earthquakes</title>
+    <style>
+      .nav-link {
+        color: gray;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+  
+      .nav-link:hover {
+        color: black;
+      }
+  
+      .footer-link {
+        text-decoration: none;
+        color: gray;
+      }
+  
+      .footer-link:hover {
+        color: black;
+      }
+    </style>
     <style>
         body {
             --primary: #ff5722; /* Orange shade */
@@ -49,19 +68,35 @@
         .output {
             text-align: center;
         }
+        .nav-link {
+            color: gray;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .nav-link:hover {
+            color: black;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .footer-link:hover {
+            color: black;
+        }
     </style>
 </head>
-<body>
-<nav class="container-fluid">
-    <ul>
-        <li><a href="/index.html" class="button">My Portfolio</a></li>
-    </ul>
-    <ul>
-        <li><a href="/hobbies.html" class="button">Hobbies</a></li>
-        <li><a href="/my-projects.html" class="button">My Projects</a></li>
-        <li><a href="/contacts.html" class="button">Contacts</a></li>
-    </ul>
-</nav>
+<nav class="container-fluid"
+        style="background-color: lightgray; padding: 1rem; width: 100%; box-sizing: border-box;">
+        <ul style="display: flex; list-style: none; padding: 0; margin: 0; gap: 1rem;">
+            <li><a href="/index.html" class="nav-link">Tadeáš Kaminský</a></li>
+            <li><a href="/hobbies.html" class="nav-link">Hobbies</a></li>
+            <li><a href="/my-projects.html" class="nav-link">My Projects</a></li>
+            <li><a href="/contacts.html" class="nav-link">Contacts</a></li>
+        </ul>
+    </nav>
 <main class="container">
     <div style="text-align: center;" class="image-container">
         <h2>Earthquakes</h2>

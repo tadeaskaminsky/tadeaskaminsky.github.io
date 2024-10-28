@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="icon" type="image/png" href="/icon.png">
+    <link rel="icon" type="image/png" href="/page_icon.png">
     <title>Tadeáš Kaminský</title>
     <style>
-        body {
-            --primary: #ff5722;
-            --primary-contrast: #ffffff;
-            --background: #ffffff;
-            --surface: #ffffff;
-            --on-surface: #000000;
-            --border: #ff5722;
-        }
-        :root {
-            --primary: #ff5722;
-        }        */
-
-         .button {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 10px 20px;
+        .nav-link {
+            color: gray;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
         }
 
-        .button:hover {
-            background-color: darken(var(--primary), 10%);
+        .nav-link:hover {
+            color: black;
         }
-        h4 {
-            text-align: justify;
-            margin-bottom: 10px;
+
+        .footer-link {
+            text-decoration: none;
+            color: gray;
         }
-        h3 {
-            text-align: justify;
-            margin-bottom: 15px;
+
+        .footer-link:hover {
+            color: black;
         }
     </style>
 </head>
-<body>
-<nav class="container-fluid">
-    <ul>
-        <li><a href="/index.html" class="button">My Portfolio</a></li>
-    </ul>
-    <ul>
-        <li><a href="/hobbies.html" class="button">Hobbies</a></li>
-        <li><a href="/my-projects.html" class="button">My Projects</a></li>
-        <li><a href="/contacts.html" class="button">Contacts</a></li>
-    </ul>
-</nav>
-<main class="container">
-    <div style="text-align: center;" class="image-container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p style="text-align: center;">Hello, my name is Tadeáš Kaminský and I'm a student of Data Science at Faculty of Mathematics, Physics and Informatics.</p>
-            <figure>
-                <img src="https://github.com/tady88/Page/raw/main/profile_picture.jpeg" alt="Profile Picture" style="width: 30%;" class="responsive"/>
-                <figcaption style="text-align: center;">My representative profile picture</figcaption>
-            </figure>
-        </section>
-        <section>
-            <h2>Curriculum Vitae</h2>
-            <h3>Education</h3>
-            <h4>FACULTY OF MATHEMATICS, PHYSICS AND INFORMATICS</h4>
-            <p style="text-align: justify;">
-                Comenius University Bratislava<br>
-                Data Science<br>
-                2022 - now</p>
-            <h4>GYMNASIUM, ALEJOVÁ 1, KOŠICE</h4>
-            <p style="text-align: justify;">2014 - 2022</p>
-        </section>
 
-    </div>
-</main>
-<footer class="container" style="text-align: center;">
-    <small>Tadeáš Kaminský &middot; 2024</small>
-</footer>
+<body style="margin: 0;">
+    <nav class="container-fluid"
+        style="background-color: lightgray; padding: 1rem; width: 100%; box-sizing: border-box;">
+        <ul style="display: flex; list-style: none; padding: 0; margin: 0; gap: 1rem;">
+            <li><a href="/index.html" class="nav-link">Tadeáš Kaminský</a></li>
+            <li><a href="/hobbies.html" class="nav-link">Hobbies</a></li>
+            <li><a href="/my-projects.html" class="nav-link">My Projects</a></li>
+            <li><a href="/contacts.html" class="nav-link">Contacts</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div style="text-align: center;" class="image-container">
+            <section id="about">
+                <h2>About Me</h2>
+                <p style="text-align: center;">Hello, my name is Tadeáš Kaminský and I'm a student of Data Science at
+                    Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava.</p>
+                <figure>
+                    <img src="/profile_picture.jpg" alt="Profile Picture" style="width: 20%;" class="responsive" />
+                    <figcaption style="text-align: center;">My representative profile picture</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <footer class="container" style="text-align: center; position: fixed; bottom: 10px; width: 100%;">
+        <small>
+            <a href="https://tadeaskaminsky.github.io" target="_blank" class="footer-link">Tadeáš Kaminský</a> &middot;
+            <a href="https://www.linkedin.com/in/tadeaskaminsky" target="_blank" class="footer-link">LinkedIn</a>
+            &middot;
+            <a href="https://github.com/tadeaskaminsky" target="_blank" class="footer-link">GitHub</a>
+        </small>
+    </footer>
 </body>
+
 </html>
